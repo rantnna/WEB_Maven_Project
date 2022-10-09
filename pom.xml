@@ -32,16 +32,6 @@
 		<version>3.6.0.1398</version>
      </dependency>
   </dependencies>
-  <build>
-    <finalName>webappmavenproj</finalName>
-    <plugins>
-	    <plugin>
-        	<groupId>org.sonarsource.scanner.maven</groupId>
-        	<artifactId>sonar-maven-plugin</artifactId>
-        	<version>3.6.0.1398</version>
-      </plugin>
-    </plugins>
-  </build>
   <profiles>
         <profile>
             <id>sonar</id>
@@ -56,4 +46,14 @@
             </properties>
         </profile>
   </profiles>
+ <build>
+    <finalName>webappmavenproj</finalName>
+    <plugins>
+	    <plugin>
+        	<groupId>org.sonarsource.scanner.maven</groupId>
+        	<artifactId>sonar-maven-plugin</artifactId>
+        	<version>3.6.0.1398</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
